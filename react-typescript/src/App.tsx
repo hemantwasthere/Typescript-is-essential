@@ -38,6 +38,7 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to Leonardo Dicpario!</Heading>
       </Oscar>
+      <Greet name='Dread' isLoggedIn={false} />
     </div>
   );
 }
