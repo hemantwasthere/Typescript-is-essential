@@ -10,3 +10,9 @@ userId = 23;
 console.log(userId);
 // boolean
 var isLoogedIn = true;
+// any
+var hero;
+function getHero() {
+    return "thor";
+}
+hero = getHero();

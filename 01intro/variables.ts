@@ -12,5 +12,14 @@ console.log(userId)
 // boolean
 let isLoogedIn: boolean = true
 
+// any
+let hero: string;
+
+function getHero(): string{
+    return "thor"
+}
+
+hero = getHero()
+
 export { };
 
