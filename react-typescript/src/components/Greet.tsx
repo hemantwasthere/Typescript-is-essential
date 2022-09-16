@@ -1,9 +1,13 @@
 import React from 'react'
 
-function Greet() {
+type GreetProps = {
+    name: string
+}
+
+function Greet({ name }: GreetProps) {
     return (
         <div>
-            Hello, My name is Hemant aka Dread
+            Hello, My name is {name} aka Dread
         </div>
     )
 }

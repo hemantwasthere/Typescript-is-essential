@@ -5,7 +5,7 @@ import Greet from './components/Greet';
 function App() {
   return (
     <div>
-      <Greet />
+      <Greet name="Hemant" />
     </div>
   );
 }
