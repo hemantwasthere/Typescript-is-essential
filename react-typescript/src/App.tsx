@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Button from './components/Button';
+import Container from './components/Container';
 import Greet from './components/Greet';
 import Heading from './components/Heading';
 import Input from './components/Input';
@@ -46,6 +47,9 @@ function App() {
       <Button handleClick={(event, id) => alert(`Button is clicked, Event is ${event} with id ${id}`)} />
 
       <Input value='' handleOnChange={(event) => alert(`${event.target.value}`)} />
+
+      {/* Style props  */}
+      <Container styles={{ border: '1px solid black', padding: '1rem' }} />
     </div>
   );
 }
