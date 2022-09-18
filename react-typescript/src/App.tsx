@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Private from './components/auth/Private';
+import Profile from './components/auth/Profile';
 import Button from './components/Button';
 import ClassCounter from './components/class/ClassCounter';
 import Container from './components/Container';
@@ -67,6 +69,9 @@ function App() {
 
       {/* Class Component  */}
       <ClassCounter message='The count value is' />
+
+      {/* Sending prop of components */}
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
