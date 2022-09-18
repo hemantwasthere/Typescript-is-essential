@@ -15,6 +15,7 @@ import Input from './components/Input';
 import Oscar from './components/Oscar';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
+import RandomNumber from './components/restriction/RandomNumber';
 import Counter from './components/state/Counter';
 import User from './components/state/User';
 import Status from './components/Status';
@@ -93,6 +94,11 @@ function App() {
           last: 'Diana',
         },
       ]} onClick={(item) => alert(item)} />
+
+
+      {/* <RandomNumber value={10} isPositive isNegative isZero /> */}
+      {/* Now we cant set other props cuz isPositive is already been set -> This is called prop restriction */}
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
