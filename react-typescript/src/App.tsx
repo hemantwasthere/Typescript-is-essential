@@ -8,6 +8,7 @@ import Container from './components/Container';
 import Box from './components/context/Box';
 import { ThemeContextProvider } from './components/context/ThemeContext';
 import { UserContextProvider } from './components/context/UserContext';
+import ListGenerics from './components/generics/ListGenerics';
 import Greet from './components/Greet';
 import Heading from './components/Heading';
 import Input from './components/Input';
@@ -72,6 +73,26 @@ function App() {
 
       {/* Sending prop of components */}
       <Private isLoggedIn={true} component={Profile} />
+
+      {/* <ListGenerics items={['Batman', 'Superman', 'Wonder Woman']} onClick={(item) => alert(item)} />
+      <ListGenerics items={[1, 2, 3]} onClick={(item) => alert(item)} /> */}
+      <ListGenerics items={[
+        {
+          id: 1,
+          first: 'Bruce',
+          last: 'Wayne',
+        },
+        {
+          id: 2,
+          first: 'Clark',
+          last: 'Kent',
+        },
+        {
+          id: 3,
+          first: 'Princess',
+          last: 'Diana',
+        },
+      ]} onClick={(item) => alert(item)} />
     </div>
   );
 }
