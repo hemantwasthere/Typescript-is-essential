@@ -17,6 +17,7 @@ import Input from './components/Input';
 import Oscar from './components/Oscar';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
+import Text from './components/polymorphic/Text';
 import RandomNumber from './components/restriction/RandomNumber';
 import Counter from './components/state/Counter';
 import User from './components/state/User';
@@ -110,8 +111,12 @@ function App() {
         {/* <div>Primary Button</div> --> we cant do that now cuz we have omitted type of children to string only */}
         Primary Button
       </CustomButton>
-
       <CustomInput />
+
+      {/* This type of component is called polymorphic component */}
+      <Text as='h1' size='lg'>Heading</Text>
+      <Text as='p' size='md'>Paragraph</Text>
+      <Text as='label' htmlFor='someId' size='sm' color='secondary'>Label</Text>
 
     </div>
   );
