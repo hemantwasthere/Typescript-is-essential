@@ -106,7 +106,9 @@ function App() {
       <Toast position='center' />
 
       <CustomButton variant='primary' onClick={() => alert('Clicked')}>
-        Primary button
+        {/* what if we want to restrict children type to only string we use Omit key word for that, for now it takes children of any React.ReactNode type */}
+        {/* <div>Primary Button</div> --> we cant do that now cuz we have omitted type of children to string only */}
+        Primary Button
       </CustomButton>
 
       <CustomInput />
