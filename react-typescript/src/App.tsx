@@ -19,6 +19,7 @@ import RandomNumber from './components/restriction/RandomNumber';
 import Counter from './components/state/Counter';
 import User from './components/state/User';
 import Status from './components/Status';
+import Toast from './components/templateliterals/Toast';
 
 function App() {
   const personName = {
@@ -99,6 +100,8 @@ function App() {
       {/* <RandomNumber value={10} isPositive isNegative isZero /> */}
       {/* Now we cant set other props cuz isPositive is already been set -> This is called prop restriction */}
       <RandomNumber value={10} isPositive />
+
+      <Toast position='center' />
     </div>
   );
 }
